@@ -56,10 +56,13 @@ public class RecherchePopulationBorneService extends MenuService {
 									if (ville.getPopulation() >= min && ville.getPopulation() <= max) {
 										System.out.println(ville);
 									}
+								}else{
+									System.out.println("Aucune ville qui corresponde à vos paramètres trouvée");
+									break;
 								}
 							}
 						} else {
-							System.out.println("min>max! Veuillez saisir les nombres valides.");
+							System.out.println("La population min ne peut pas dépasser la population max.\r Veuillez saisir les nombres valides.");
 						}
 					}
 				}
